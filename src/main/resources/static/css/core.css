@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+body {
+	background-color: #f3f1f2;
+}
+
+.header-menu-container {
+	height: 35pt;
+	background-color: white;
+	color: #96a6a7;
+	text-transform: uppercase;
+}
+
+.search {
+	color: white;
+	background-color: #e2dee0;
+	height: 35pt;
+}
+
+.search-button{
+	background-color: #e94e38;
+	text-transform: uppercase;
+	width: 67pt;
+	opacity: 1;
+}
+
+.search-container {
+	background-color:#96a6a7;
+	height: 250pt;
+	background-image: url(../images/search_background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+.search-form btn, .search-form select {
+	border: none;
+	border-radius: 16pt;
+	height: 25pt;
+	margin-bottom: 10pt;
+	height: 29pt;
+	opacity: 0.5;
+	color:white;
+	background-color:#5c5b55;
+}
+
+.search-form select{
+	width: 106pt;
+}
+
+.tag-input{
+	width: 227pt;
+}
+
+.login {
+	background-color: #e94e38;
+	height: 35pt;
+	color: white;
+}
+
+a {
+	color: #96a6a7;
+}
+
+.advert-prewiew{
+	background-color: white;
+	padding-left: -15pt;
+	padding-right: -15pt;
+}
+
+.advert-prewiew-photo{
+	height: 68pt;
+	width:100%;
+	background-color: black;
+}
+
+.add-advert{
+	color:white;
+	text-transform: uppercase;
+	background-color: #1baf5d;
+	line-height: 35pt;
+}
+
+.menu-icon{
+	padding-right: 6pt;
+}
+/*add advert page style*/
+.add-advert-form input,.add-advert-form textarea, .add-advert-form select {
+	width: 500pt;
+}

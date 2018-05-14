@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="../../static/css/bootstrap.css"
+	th:href="@{/css/bootstrap.css}" rel="stylesheet" media="screen" />
+<link href="../../static/css/core.css" th:href="@{/css/core.css}"
+	rel="stylesheet" media="screen" />
+<script type="text/javascript" src="/js/jquery-3.2.1.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+<title>Insert title here</title>
+</head>
+<body>
+	<div class="container">
+		<form action="" class="add-advert-form">
+			<label>Выберите категорию</label>
+			<div class="btn-group">
+				<button type="button" class="btn btn-default dropdown-toggle"
+					data-toggle="dropdown">
+					Авто <span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu" role="menu">
+					<li><a href="#">Недвижимость</a></li>
+					<li><a href="#">Вещи</a></li>
+					<li><a href="#">Услуги</a></li>
+					<li><a href="#">Хобби</a></li>
+				</ul>
+			</div>
+			<br /> <label>Название</label> <input type="text"
+				class="form-control"> <label>Описание</label>
+			<textarea rows="8" class="form-control"></textarea>
+			<label>Цена</label> <input type="text" class="form-control">
+			<label>Фотографии</label> <input type="button" class="form-control">
+			<label>Ссылка видео Youtube</label> <input type="text"
+				class="form-control"> <input type="button"
+				value="продолжить" class="form-control">
+		</form>
+	</div>
+</body>
+</html>

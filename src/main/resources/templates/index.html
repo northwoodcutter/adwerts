@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<link href="../../static/css/bootstrap.css"
+	th:href="@{/css/bootstrap.css}" rel="stylesheet" media="screen" />
+<link href="../../static/css/core.css" th:href="@{/css/core.css}"
+	rel="stylesheet" media="screen" />
+<title>Insert title here</title>
+</head>
+<body>
+	<div class="row header-menu-container">
+		<div class="col-md-5 col-md-offset-3">
+			<ul class="nav navbar-nav">
+				<li><a>Авто</a>
+				<li><a>Недвижимость</a>
+				<li><a>Личные вещи</a>
+				<li><a>Услуги</a>
+				<li><a>Хобби</a>
+			</ul>
+		</div>
+		<div class="col-md-1 search">
+			<span class="glyphicon glyphicon-search menu-icon"></span>
+		</div>
+		<div class="col-md-2 add-advert">
+			<a href="/add_advert" th:href="@{/add_advert}"> <span
+				class="glyphicon glyphicon-plus menu-icon">разместить
+					объявление</span>
+			</a>
+		</div>
+		<div class="col-md-1 login" th:fragment="logout"
+			sec:authorize="isAuthenticated()">
+			<span class="glyphicon glyphicon-user">
+				<form action="#" th:action="@{/logout}" method="post">
+					<input type="submit" value="Выйти" />
+				</form>
+			</span>
+		</div>
+	</div>
+	<div class="row search-container">
+		<div class="col-md-3 col-md-offset-3">
+			<form action="" class="search-form">
+				<div class="col-md-6">
+					<div class="btn-group">
+						<button type="button" class="btn btn-default dropdown-toggle"
+							data-toggle="dropdown">
+							Действие <span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="#">Действие</a></li>
+							<li><a href="#">Другое действие</a></li>
+							<li><a href="#">Что-то иное</a></li>
+							<li class="divider"></li>
+							<li><a href="#">Отдельная ссылка</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="btn-group">
+						<button type="button" class="btn btn-default dropdown-toggle"
+							data-toggle="dropdown">
+							Действие <span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="#">Действие</a></li>
+							<li><a href="#">Другое действие</a></li>
+							<li><a href="#">Что-то иное</a></li>
+							<li class="divider"></li>
+							<li><a href="#">Отдельная ссылка</a></li>
+						</ul>
+					</div>
+				</div>
+				<input type="text" class="tag-input"> <br /> <input
+					type="button" class="search-button" value="поиск">
+			</form>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-5 col-md-offset-3">
+			<ul class="nav navbar-nav">
+				<li><a>Новые</a>
+				<li><a>Рекомендуемые</a>
+			</ul>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 advert-prewiew thumbnail">
+				<img alt="" src="../images/tovar.jpg" class="advert-prewiew-photo">
+				<h3 class="advert-prewiev-text">saxasxasxasxasxasxc
+					sdasdasdsadas asdasdasdasd</h3>
+				<h4>12888 руб</h4>
+				<p>м. Сфыфыс</p>
+				<p>21.03.2018</p>
+			</div>
+			<div class="col-md-3 advert-prewiew thumbnail">
+				<img alt="" src="../images/tovar.jpg" class="advert-prewiew-photo">
+				<h3 class="advert-prewiev-text">saxasxasxasxasxasxc
+					sdasdasdsadas asdasdasdasd</h3>
+				<h4>12888 руб</h4>
+				<p>м. Сфыфыс</p>
+				<p>21.03.2018</p>
+			</div>
+			<div class="col-md-3 advert-prewiew thumbnail">
+				<img alt="" src="../images/tovar.jpg" class="advert-prewiew-photo">
+				<h3 class="advert-prewiev-text">saxasxasxasxasxasxc
+					sdasdasdsadas asdasdasdasd</h3>
+				<h4>12888 руб</h4>
+				<p>м. Сфыфыс</p>
+				<p>21.03.2018</p>
+			</div>
+			<div class="col-md-3 advert-prewiew thumbnail">
+				<img alt="" src="../images/tovar.jpg" class="advert-prewiew-photo">
+				<h3 class="advert-prewiev-text">saxasxasxasxasxasxc
+					sdasdasdsadas asdasdasdasd</h3>
+				<h4>12888 руб</h4>
+				<p>м. Сфыфыс</p>
+				<p>21.03.2018</p>
+			</div>
+		</div>
+		<ul>
+			<li>Go to the <a href="/user/index" th:href="@{/user/index}">secured
+					pages</a></li>
+		</ul>
+	</div>
+</body>
+</html>
